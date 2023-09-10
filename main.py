@@ -161,7 +161,10 @@ while True:
     elif choice == '3':
         complete_contract()
     elif choice == '4':
-        create_project()
+        if session.query(Contract).count() > 0:
+            create_project()
+        else:
+            print("По условиям надо сначала добавить контракт, а потом проект!\n")
     elif choice == '5':
         add_contract_to_project()
     elif choice == '6':
