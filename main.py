@@ -179,6 +179,7 @@ while True:
         for idx, contract in enumerate(contracts, start=1):
             print(f"{idx}. {contract.title} ({contract.status})")
     elif choice == '7':
+        print("CREATED BY CHAMOMILE (Ilya Romaneyko)")
         break
 
 # Завершение сессии
